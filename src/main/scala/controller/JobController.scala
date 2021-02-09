@@ -8,11 +8,9 @@ import akka.http.scaladsl.server.Directives.{as, complete, entity, get, onComple
 import akka.http.scaladsl.server.{Directives, Route}
 import akka.stream.ActorMaterializer
 import model.{JobGroupReq, _}
-import repository.JobRepository.{saveJobGroup, savePublishers, saveRule}
+import repository.JobRepository
 import service.JobService
 import spray.json.DefaultJsonProtocol
-
-import scala.concurrent.duration.DurationInt
 import scala.concurrent.{Await, ExecutionContextExecutor}
 import scala.util.{Failure, Success}
 
@@ -33,9 +31,13 @@ object JobController {
   implicit val system: ActorSystem = ActorSystem("web-app")
   private implicit val dispatcher: ExecutionContextExecutor = system.dispatcher
   private implicit val materialize: ActorMaterializer = ActorMaterializer()
+
+  val jobRepository = JobRepository()
+  val jobService = JobService()
+
   val createJobGroup = post {
     entity(as[JobGroupReq]) {
-      req => onComplete(saveJobGroup(req)) {
+      req => onComplete(jobRepository.saveJobGroup(req)) {
 //        println("incoming req = "+req)
         _ match {
           case Success(_) => complete(StatusCodes.OK,"job group saved")
@@ -47,7 +49,7 @@ object JobController {
 
   val createRule = post {
     entity(as[Rule]) {
-      req => onComplete(saveRule(req)) {
+      req => onComplete(jobRepository.saveRule(req)) {
         _ match {
           case Success(_) => complete(StatusCodes.OK,"rule saved")
           case Failure(e) => throw e
@@ -58,7 +60,7 @@ object JobController {
 
   val createPublisher = post {
     entity(as[Publisher]) {
-      req => onComplete(savePublishers(req)) {
+      req => onComplete(jobRepository.savePublishers(req)) {
         _ match {
           case Success(_) => complete(StatusCodes.OK,"publisher saved")
           case Failure(e) => throw e
@@ -71,7 +73,7 @@ object JobController {
     get {
       entity(as[List[Job]]) {
         req => {
-          onComplete(JobService.classifyJobs(req)) {
+          onComplete(jobService.classifyJobs(req)) {
             _ match {
               case Success(res) => complete(StatusCodes.OK, res)
               case Failure(e) => {

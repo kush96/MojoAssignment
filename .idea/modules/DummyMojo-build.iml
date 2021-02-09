@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="DummyMojo-build" external.linked.project.path="$MODULE_DIR$/../../project" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" sbt.imports="_root_.sbt.Keys._, _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.org.jetbrains.sbt.IdeaShellPlugin.autoImport._, _root_.org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin.autoImport._, _root_.sbt._, _root_.sbt.nio.Keys._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.org.jetbrains.sbt.StructurePlugin, _root_.org.jetbrains.sbt.IdeaShellPlugin, _root_.org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin, _root_.scala.xml.{TopScope=&amp;gt;SUB:DOLLARscope}" sbt.resolvers="file:$USER_HOME$/.sbt/preloaded|maven|local-preloaded, /Users/kushsingh/.ivy2/cache|ivy|Local cache, https://repo1.maven.org/maven2/|maven|public" type="SBT_MODULE" version="4">
+<module external.linked.project.id="DummyMojo-build" external.linked.project.path="$MODULE_DIR$/../../project" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" sbt.imports="_root_.sbt.Keys._, _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.sbt._, _root_.sbt.nio.Keys._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.scala.xml.{TopScope=&amp;gt;SUB:DOLLARscope}" sbt.resolvers="file:$USER_HOME$/.sbt/preloaded|maven|local-preloaded, /Users/kushsingh/.ivy2/cache|ivy|Local cache, https://repo1.maven.org/maven2/|maven|public" type="SBT_MODULE" version="4">
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../project/target/idea-classes" />
     <output-test url="file://$MODULE_DIR$/../../project/target/idea-test-classes" />
@@ -104,17 +104,9 @@
           <root url="jar://$USER_HOME$/.sbt/boot/scala-2.12.12/org.scala-sbt/sbt/1.4.6/zinc-persist-core-assembly-1.4.4.jar!/" />
           <root url="jar://$USER_HOME$/.sbt/boot/scala-2.12.12/org.scala-sbt/sbt/1.4.6/zinc-persist_2.12-1.4.4.jar!/" />
           <root url="jar://$USER_HOME$/.sbt/boot/scala-2.12.12/org.scala-sbt/sbt/1.4.6/zinc_2.12-1.4.4.jar!/" />
-          <root url="jar://$APPLICATION_PLUGINS_DIR$/Scala/repo/org.jetbrains.scala/sbt-idea-compiler-indices/scala_2.12/sbt_1.0/1.0.8/jars/sbt-idea-compiler-indices.jar!/" />
-          <root url="jar://$APPLICATION_PLUGINS_DIR$/Scala/repo/org.jetbrains/sbt-idea-shell/scala_2.12/sbt_1.0/2018.3/jars/sbt-idea-shell.jar!/" />
-          <root url="jar://$APPLICATION_PLUGINS_DIR$/Scala/repo/org.jetbrains/sbt-structure-extractor/scala_2.12/sbt_1.0/2020.3/jars/sbt-structure-extractor.jar!/" />
-          <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/spray/spray-json_2.12/1.3.5/spray-json_2.12-1.3.5.jar!/" />
-          <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jetbrains/scala/scala-compiler-indices-protocol_2.12/1.0.8/scala-compiler-indices-protocol_2.12-1.0.8.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$APPLICATION_PLUGINS_DIR$/Scala/repo/org.jetbrains.scala/sbt-idea-compiler-indices/scala_2.12/sbt_1.0/1.0.8/srcs/sbt-idea-compiler-indices-sources.jar!/" />
-          <root url="jar://$APPLICATION_PLUGINS_DIR$/Scala/repo/org.jetbrains/sbt-idea-shell/scala_2.12/sbt_1.0/2018.3/srcs/sbt-idea-shell-sources.jar!/" />
-          <root url="jar://$APPLICATION_PLUGINS_DIR$/Scala/repo/org.jetbrains/sbt-structure-extractor/scala_2.12/sbt_1.0/2020.3/srcs/sbt-structure-extractor-sources.jar!/" />
           <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/gigahorse-core_2.12/0.5.0/gigahorse-core_2.12-0.5.0-sources.jar!/" />
           <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/gigahorse-okhttp_2.12/0.5.0/gigahorse-okhttp_2.12-0.5.0-sources.jar!/" />
           <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/shaded-jawn-parser_2.12/0.9.1/shaded-jawn-parser_2.12-0.9.1-sources.jar!/" />
@@ -133,7 +125,6 @@
           <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.3.3/config-1.3.3-sources.jar!/" />
           <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.4.0/ssl-config-core_2.12-0.4.0-sources.jar!/" />
           <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/lm-coursier-shaded_2.12/2.0.5/lm-coursier-shaded_2.12-2.0.5-sources.jar!/" />
-          <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/spray/spray-json_2.12/1.3.5/spray-json_2.12-1.3.5-sources.jar!/" />
           <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.5.0/jna-platform-5.5.0-sources.jar!/" />
           <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.5.0/jna-5.5.0-sources.jar!/" />
           <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/openhft/zero-allocation-hashing/0.10.1/zero-allocation-hashing-0.10.1-sources.jar!/" />
@@ -142,7 +133,6 @@
           <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.11.2/log4j-slf4j-impl-2.11.2-sources.jar!/" />
           <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.4.1/checker-qual-3.4.1-sources.jar!/" />
           <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.18/jansi-1.18-sources.jar!/" />
-          <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jetbrains/scala/scala-compiler-indices-protocol_2.12/1.0.8/scala-compiler-indices-protocol_2.12-1.0.8-sources.jar!/" />
           <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-builtins/3.16.0/jline-builtins-3.16.0-sources.jar!/" />
           <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.16.0/jline-reader-3.16.0-sources.jar!/" />
           <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-style/3.16.0/jline-style-3.16.0-sources.jar!/" />
@@ -209,6 +199,6 @@
   </component>
   <component name="SbtModule">
     <option name="buildForURI" value="file:$MODULE_DIR$/../../" />
-    <option name="imports" value="_root_.sbt.Keys._, _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.org.jetbrains.sbt.IdeaShellPlugin.autoImport._, _root_.org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin.autoImport._, _root_.sbt._, _root_.sbt.nio.Keys._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.org.jetbrains.sbt.StructurePlugin, _root_.org.jetbrains.sbt.IdeaShellPlugin, _root_.org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin, _root_.scala.xml.{TopScope=&gt;SUB:DOLLARscope}" />
+    <option name="imports" value="_root_.sbt.Keys._, _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.sbt._, _root_.sbt.nio.Keys._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.scala.xml.{TopScope=&gt;SUB:DOLLARscope}" />
   </component>
 </module>

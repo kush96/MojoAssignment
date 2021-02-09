@@ -2,26 +2,32 @@ package service
 
 import helper.OperatorHelper.operatorMap
 import model.{ClassifiedJobs, Job, JobGroup, Publisher, Rule}
+import repository.JobRepository
 
 import scala.reflect.runtime.{universe => ru}
-import repository.JobRepository.getAllJobGroups
+
 // TODO: What these two imports for?
 import scala.concurrent._
 import ExecutionContext.Implicits.global
-object JobService {
+
+case class JobService() {
+
+  private val jobRepository = JobRepository()
 
   def classifyJobs(jobs:List[Job]):Future[List[ClassifiedJobs]] = {
     Future.sequence(jobs.map(job => classifyJob(job).map(jobGroup => ClassifiedJobs(job, jobGroup.id,getPublishersForJob(job,jobGroup)))))
   }
   def classifyJob(job:Job):Future[JobGroup]= {
     for {
-      allGroups <- getAllJobGroups()
+      allGroups <- jobRepository.getAllJobGroups()
 //      TODO: How to throw exception if no match
       jobGroup = allGroups.find(jobGrp=>isJobGroupAMatch(job,jobGrp)).get
     } yield jobGroup
   }
   def getPublishersForJob(job:Job,jobGroup:JobGroup):List[String] = {
     val allPublisherIds = jobGroup.sponsoredPublishers.map(pub=>pub.id)
+    if(allPublisherIds.isEmpty)
+      return List()
     val rand = new scala.util.Random
     scala.util.Random.shuffle(allPublisherIds).take(1+rand.nextInt(allPublisherIds.size))
   }

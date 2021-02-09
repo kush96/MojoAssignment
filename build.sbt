@@ -16,7 +16,8 @@ libraryDependencies ++=Seq(
   "com.typesafe.akka" %% "akka-testkit" % "2.6.10" % Test,
   "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2",
   "ch.qos.logback" % "logback-classic" % "1.2.3",
-  "org.scalatest" %% "scalatest" % "3.2.3" % Test
+  "org.scalatest" %% "scalatest" % "3.0.8" % Test ,
+  "org.mockito" % "mockito-core" % "2.23.4" % "test"
 //  ,
 //  "io.estatico" %% "bson-codec" % "0.0.1"
 )

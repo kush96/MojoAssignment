@@ -8,13 +8,13 @@ import org.bson.codecs.configuration.CodecRegistries.{fromProviders, fromRegistr
 import org.mongodb.scala.bson.codecs.DEFAULT_CODEC_REGISTRY
 import org.mongodb.scala.model.Filters.equal
 import org.mongodb.scala.{Completed, MongoClient, MongoCollection, MongoDatabase}
-import repository.JobRepository.publishers
+//import repository.JobRepository.publishers
 
 import scala.concurrent.duration.DurationInt
 import scala.concurrent.{Await, ExecutionContextExecutor, Future}
 
 
-object JobRepository {
+case class JobRepository() {
   implicit val system: ActorSystem = ActorSystem("web-app")
   private implicit val dispatcher: ExecutionContextExecutor = system.dispatcher
   private implicit val materialize: ActorMaterializer = ActorMaterializer()
